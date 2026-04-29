@@ -2,7 +2,7 @@
 
 echo 'Bajamos repositorio de GitHub'
 # Copiamos código actualizado de GitHub
-git pull origin main
+git pull origin master
 
 echo 'Detenemos contenedores de la Aplicación'
 # Detenemos Contenedores
