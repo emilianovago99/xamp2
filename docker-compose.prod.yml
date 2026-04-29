@@ -1,0 +1,19 @@
+version: "3.8"
+
+services:
+  agenda:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    ports:
+      - "8088:3000"
+    volumes:
+      - datos:/app/datos
+    environment:
+      - NODE_ENV=production
+    restart: always
+    container_name: agenda-prod
+
+volumes:
+  datos:
+    driver: local
